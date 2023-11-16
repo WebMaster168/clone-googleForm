@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="image/icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <title>Конструктор опросников
+    </title>
+    <style>
+        body {
+            background: #00BFFF url(image/background.png);
+            background-repeat: repeat-x;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container{
+            max-width: 520px;
+            margin: 0 auto;
+        }
+        .add__question {
+            background-image: url(image/addIcon.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #scrollUpBtn{
+            background-image: url('./image/up.png');
+            background-repeat: repeat-x;
+            background-position: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #scrollDownBtn{
+            background-image: url('./image/down.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title__inner">
+        <p class="title__name">Название опросника</p>
+        <div class="title__wrapper">
+            <h1 class="title"></h1>
+            <button class="title__btnTop hidden">Изменить</button>
+        </div>
+        
+        <div class="title__box">
+            <input class="title__enter" type="text" placeholder="Введите заголовок">
+            <button class="title__btn">Подтвердить</button>
+        </div>
+        
+    </div>
+    </div>
+    
+    <main class="main">
+        <div class="wrapper">
+            <div class="questions__edit">
+                <input class="questions__edit-name" type="text" placeholder="Введите название вопроса">
+                <div class="variant__wrap">
+                    
+                    <div class="variant__box">
+                        <div class="variant__inner">
+                            <div data-tab-content id="tab-1" class="variant__cob">
+                                <div class="one__inner">
+                                    <div class="one">
+                                        <div class="circle"></div>
+                                        <input type="text" class="variant" placeholder="Введите вариант ответа">
+                                        <div class="variant__closed">
+                                            +
+                                        </div>
+                                    </div>
+                                </div> 
+                                <button class="add">Добавить вариант</button>   
+                            </div>
+                            
+                            <div data-tab-content id="tab-2" class="text hidden">
+                                <input type="text" placeholder="Краткий ответ">
+                            </div>
+                            <div data-tab-content id="tab-3" class="many hidden">
+                                <div class="rows">
+                                    <p>Строки</p>
+                                    <div class="many__rows">
+                                        <div class="many__itemRow many__item">
+                                            <input type="text" placeholder="Ряд">
+                                            <div class="variant__closed">
+                                                +
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="add__row">Добавить строку</button>   
+                                </div>
+                                <div class="columns">
+                                    <p>Столбцы</p>
+                                    <div class="many__columns">
+                                        <div class="many__itemColumn many__item">
+                                            <div class="circle"></div>
+                                            <input type="text" placeholder="Столбец">
+                                            <div class="variant__closed">
+                                                +
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="add__column">Добавить столбец</button> 
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="button__inner">
+                            <button class="variant__btn">Категория вопроса</button>
+                            <div class="variant__list hidden">
+                                <li data-tab="tab-1">Один из списка</li>
+                                <li data-tab="tab-2">Текст</li>
+                                <li data-tab="tab-3">Множественный выбор</li>
+                            </div>
+                            <div class="delete__inner">
+                                <button class="delete__btn">Удалить вопрос</button>
+                            </div>
+                            <div class="btn__checkbox">
+                                <input type="checkbox" id="check">
+                                <label class="check">Обязательный вопрос</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+
+            </div>
+            <div class="questions__edit item active">
+                <input class="questions__edit-name" type="text" placeholder="Введите название вопроса">
+                <div class="variant__wrap">
+                    
+                    <div class="variant__box">
+                        <div class="variant__inner">
+                            <div data-tab-content id="tab-1" class="variant__cob">
+                                <div class="one__inner">
+                                    <div class="one">
+                                        <div class="circle"></div>
+                                        <input type="text" class="variant" placeholder="Введите вариант ответа">
+                                        <div class="variant__closed">
+                                            +
+                                        </div>
+                                    </div>
+                                </div> 
+                                <button class="add">Добавить вариант</button>   
+                            </div>
+                            
+                            <div data-tab-content id="tab-2" class="text hidden">
+                                <input type="text" placeholder="Краткий ответ">
+                            </div>
+                            <div data-tab-content id="tab-3" class="many hidden">
+                                <div class="rows">
+                                    <p>Строки</p>
+                                    <div class="many__rows">
+                                        <div class="many__itemRow many__item">
+                                            <input type="text" placeholder="Ряд">
+                                            <div class="variant__closed">
+                                                +
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="add__row">Добавить строку</button>   
+                                </div>
+                                <div class="columns">
+                                    <p>Столбцы</p>
+                                    <div class="many__columns">
+                                        <div class="many__itemColumn many__item">
+                                            <div class="circle"></div>
+                                            <input type="text" placeholder="Столбец">
+                                            <div class="variant__closed">
+                                                +
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="add__column">Добавить столбец</button> 
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="button__inner">
+                            <button class="variant__btn">Категория вопроса</button>
+                            <div class="variant__list hidden">
+                                <li data-tab="tab-1">Один из списка</li>
+                                <li data-tab="tab-2">Текст</li>
+                                <li data-tab="tab-3">Множественный выбор</li>
+                            </div>
+                            <div class="delete__inner">
+                                <button class="delete__btn">Удалить вопрос</button>
+                            </div>
+                            <div class="btn__checkbox">
+                                <input type="checkbox" id="check">
+                                <label class="check">Обязательный вопрос</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+
+            </div>
+        </div>
+        <div class="questions__container">
+            <button class="add__question" title="Добавить вопрос"></button>
+        </div>
+        <button id="scrollUpBtn" title="Вверх"></button>
+        <button id="scrollDownBtn" title="Вниз"></button>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

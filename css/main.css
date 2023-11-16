@@ -1,0 +1,277 @@
+html * {
+    font-family: 'Play', sans-serif !important;
+}
+.hidden{
+    display: none;
+}
+.many.hidden{
+    display: none;
+}
+.text.hidden{
+    display: none;
+}
+.title__wrapper{
+    display: flex;
+}
+.title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 7px;
+    color:brown;
+}
+.title__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 900;
+    border: 4px inset aqua;
+    border-radius: 7px;
+    padding: 6px;
+    background: lightskyblue;
+    width: 500px;
+    position: relative;
+    top: 25px;
+    
+    font-size: 20px;
+}
+.title__btn,
+.title__btnTop{
+    background-color: cornflowerblue;
+    color: white;
+    border:solid 2px black;
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+.title__btn:hover, .title__btnTop:hover{
+    background-color: royalblue;
+    border:solid 2px darkslategrey;
+}
+.title__enter{
+    padding: 10px 30px; 
+    border-radius: 7px;
+}
+.title__enter:hover{
+    border: 2px solid lightslategrey;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.main{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+.wrapper{
+    border: 4px groove mediumslateblue;
+    padding: 20px;
+    background: lightskyblue;
+    border-top: 4px aqua groove;
+    border-radius: 7px;
+    position: relative;
+    
+    transition: .3s;
+}
+.variant__closed{
+    transform: rotate(45deg);
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.variant__closed:hover{
+    color: rgb(41, 41, 41);
+}
+.button__inner {
+    bottom: -26px;
+    position: absolute;
+    margin-top: 15px;
+    right: -175px;
+    top: -82px;
+}
+.one{
+    display: flex;
+    align-items: center;
+}
+.variant__box{
+    position: relative;
+}
+.many__item{
+    display: flex;
+}
+.many{
+    display: flex;
+}
+.item{
+    position: absolute;
+    top: -400px;
+}
+.actNode{
+    position: static;
+}
+.add__question{
+    border: 2px solid lightblue;
+    width: 46px;
+    height: 46px;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+    position: fixed;
+    left: 1340px;
+    bottom: 78%;
+    border-radius: 10px;
+}
+.add__question:hover{
+    border: 2px solid aqua;
+}
+.questions__edit-name{
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 4px solid blue;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 250px;
+}
+.questions__edit{
+    margin-bottom: 15px;
+    
+    padding: 17px 193px 66px 26px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.one input{
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 4px solid gold;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.variant__list{
+    position: static;
+    width: 170px;
+    margin-left: 18px;
+    list-style: none;
+    background: antiquewhite;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.add{
+    padding: 10px;
+    border: none;
+    background: darkorange;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+.add:hover{
+    background-color: rgb(231, 100, 52);
+    border: 1px solid lightslategrey;
+}
+.variant__btn{
+    padding: 3px 0px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: dodgerblue;
+    cursor: pointer;
+    width: 165px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.variant__btn:hover{
+    background-color: steelblue;
+}
+.variant__list li{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.variant__list li:hover{
+    background-color: burlywood;
+}
+.text{
+    margin-bottom: 66px;
+}
+.text input{
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 4px solid gold;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.many input{
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 4px solid gold;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.many__itemColumn{
+    align-items: center;
+}
+.rows{
+    margin-right: 15px;
+}
+.many button{
+    padding: 10px;
+    border: none;
+    background: darkorange;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+.many button:hover{
+    background-color: rgb(231, 100, 52);
+    border: 1px solid lightslategrey;
+}
+.delete__inner{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    
+}
+.delete__inner button{
+    color: white;
+    background-color: rgb(230, 28, 79);
+    border-radius: 5px;    
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.delete__inner button:hover{
+    background-color: rgb(221, 25, 51);
+}
+.check{
+    color: crimson;
+}
+.check.act{
+    color: green;
+}
+#scrollUpBtn,
+#scrollDownBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#scrollUpBtn {
+    margin-bottom: 550px;
+    height: 32px;
+    width: 32px;
+}
+#scrollDownBtn {
+    margin-bottom: 500px;
+    height: 32px;
+    width: 32px;
+}
